@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+}
+:root {
+  --darkBlue: rgb(30, 30, 57);
+  --createBtn: rgb(57, 165, 57);
+}
+.app {
+  width: 100%;
+  height: 100vh;
+
+  .main-header {
+    width: 100%;
+    height: 90px;
+    background-color: var(--darkBlue);
+    color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+  }
+}
+.daily-schedule {
+  width: 100%;
+  display: flex;
+  min-height: calc(100vh - 90px);
+
+  .main-panel {
+    width: 450px;
+    height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(240, 240, 236);
+    box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+
+    p {
+      width: 380px;
+      text-align: center;
+      margin: 25px 0 15px;
+    }
+  }
+}
+.create-appointment-btn {
+  width: 350px;
+  height: 40px;
+  margin-top: 50px;
+  font-size: 18px;
+  color: beige;
+  border: 1px solid var(--createBtn);
+  background-color: var(--createBtn);
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 3px 1px gray;
+  }
+  &:active {
+    transform: scale(1.01);
+  }
+}
+#doctors-list {
+  width: 350px;
+  height: 35px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+}
+.appointment-list {
+  width: 1070px;
+  height: 605px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 6px 6px 10px 2px rgba(0, 0, 0, 0.3);
+  overflow: auto;
+
+  .appointment-table {
+    border: 1px solid var(--darkBlue);
+    border-collapse: collapse;
+
+    th,
+    td,
+    tr {
+      padding: 4px 10px;
+    }
+    th {
+      background-color: beige;
+      font-weight: bold;
+    }
+    td:not(:first-child),
+    th:not(:first-child) {
+      width: 140px;
+    }
+    tr:nth-child(even) {
+      background-color: rgb(245, 245, 230);
+    }
+    .td-box {
+      font-size: 12px;
+      max-width: 5ch;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      cursor: pointer
+    }
+  }
+}
+.appointment-form {
+  width: 100%;
+  height: calc(100vh - 90px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .form {
+    width: 500px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid var(--darkBlue);
+    border-radius: 5px;
+    padding: 15px;
+
+    label {
+      margin: 15px 0 5px;
+    }
+    input {
+      height: 40px;
+      border: 1px solid var(--darkBlue);
+      outline: none;
+      padding: 0 10px;
+    }
+    button {
+      width: 100%;
+    }
+    .top-div {
+      width: 100%;
+      display: flex;
+      justify-content: end;
+    }
+    .back-btn {
+      width: 60px;
+      height: 30px;
+      border: 1px solid var(--createBtn);
+      background-color: var(--createBtn);
+      border-radius: 3px;
+      color: beige;
+      cursor: pointer;
+    }
+  }
+}

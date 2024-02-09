@@ -1,0 +1,60 @@
+{
+  "appointments": [
+    {
+      "id": "1",
+      "doctorId": 1,
+      "date": "07/02/2024",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "patientName": "Jane Doe"
+    },
+    {
+      "id": "2",
+      "doctorId": 2,
+      "date": "07/02/2024",
+      "startTime": "10:00",
+      "endTime": "10:30",
+      "patientName": "John Smith"
+    },
+    {
+      "id": "3",
+      "doctorId": 4,
+      "date": "08/02/2024",
+      "startTime": "16:30",
+      "endTime": "17:00",
+      "patientName": "Jack Brown"
+    },
+    {
+      "id": "4",
+      "doctorId": 6,
+      "date": "08/02/2024",
+      "startTime": "13:00",
+      "endTime": "13:30",
+      "patientName": "Carla Miller"
+    },
+    {
+      "id": "5",
+      "doctorId": 4,
+      "date": "09/02/2024",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "patientName": "Drake Parker"
+    },
+    {
+      "id": "6",
+      "doctorId": 6,
+      "date": "07/02/2024",
+      "startTime": "17:30",
+      "endTime": "18:00",
+      "patientName": "Bob Jones"
+    },
+    {
+      "id": "7",
+      "doctorId": 1,
+      "date": "07/02/2024",
+      "startTime": "17:30",
+      "endTime": "18:00",
+      "patientName": "Miley Scott"
+    }
+  ]
+}
